@@ -36,6 +36,34 @@
           background: #12382c;
           color: #d7e8df;
         }
+
+        .navbar-collapse {
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            margin-left: auto;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                justify-content: flex-start;
+                margin-top: 10px;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+        }
     </style>
 
 </head>
